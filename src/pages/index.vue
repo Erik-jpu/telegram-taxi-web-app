@@ -4,9 +4,13 @@ const navItems = [
   { label: 'Платформа', id: 'platform' },
   { label: 'Mini Apps', id: 'apps' },
   { label: 'Token', id: 'token' },
+  { label: 'Для таксопарков', id: 'fleets' },
+  { label: 'Инвестиции', id: 'investment' },
   { label: 'Roadmap', id: 'roadmap' },
   { label: 'Контакты', id: 'contact' },
 ]
+
+const telegramLink = 'https://t.me/telegramtaxi'
 </script>
 
 <template>
@@ -249,6 +253,98 @@ const navItems = [
       </div>
     </section>
 
+    <!-- Fleets -->
+    <section id="fleets" class="px-5 py-20 relative scroll-mt-28 md:py-28">
+      <div class="mx-auto max-w-1180px">
+        <p class="text-sm text-cyan-300 font-800">
+          Для таксопарков
+        </p>
+
+        <h2 class="text-3xl font-900 mt-3 md:text-4xl">
+          Решение для таксопарков
+        </h2>
+
+        <div class="mt-6 p-6 border border-white/10 rounded-3xl bg-white/6 backdrop-blur">
+          <p class="text-white/60 leading-7">
+            Централизованное управление автопарком: массовая регистрация водителей, распределение заказов, мониторинг и аналитика. Интеграция с бухгалтерией и отчётностью, гибкие тарифы и кастомизация интерфейсов под бренд парка.
+          </p>
+
+          <div class="mt-6 gap-4 grid md:grid-cols-3">
+            <div class="p-4 border border-white/10 rounded-2xl bg-white/8">
+              <p class="text-sm text-cyan-300">
+                Управление
+              </p>
+              <b class="mt-2 block">Автопарк</b>
+            </div>
+
+            <div class="p-4 border border-white/10 rounded-2xl bg-white/8">
+              <p class="text-sm text-cyan-300">
+                Статистика
+              </p>
+              <b class="mt-2 block">Отчётность</b>
+            </div>
+
+            <div class="p-4 border border-white/10 rounded-2xl bg-white/8">
+              <p class="text-sm text-cyan-300">
+                Бренд
+              </p>
+              <b class="mt-2 block">White label</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Investment -->
+    <section id="investment" class="px-5 py-20 relative scroll-mt-28 md:py-28">
+      <div class="mx-auto max-w-1180px">
+        <p class="text-sm text-cyan-300 font-800">
+          Investment Token
+        </p>
+
+        <h2 class="text-3xl font-900 mt-3 md:text-4xl">
+          TAXI Token — кратко для инвесторов
+        </h2>
+
+        <div class="mt-6 p-6 border border-white/10 rounded-3xl bg-white/6 backdrop-blur">
+          <p class="text-white/60 leading-7">
+            TAXI — утилити-токен в сети BNB Smart Chain (BEP‑20). Общая эмиссия: 7,000,000,000 TAXI. Токен используется для поощрений водителей, программ лояльности пассажиров, реферальных вознаграждений, скидок и маркетинговых кампаний. Минтинг отключён после деплоя; возможна политика сжигания по решению компании.
+          </p>
+
+          <div class="mt-6 gap-4 grid md:grid-cols-2">
+            <div class="p-4 border border-white/10 rounded-2xl bg-white/8">
+              <p class="text-sm text-cyan-300">
+                Issuer
+              </p>
+              <b class="mt-2 block">City Flow Mobility Ltd.</b>
+            </div>
+
+            <div class="p-4 border border-white/10 rounded-2xl bg-white/8">
+              <p class="text-sm text-cyan-300">
+                Юрисдикция
+              </p>
+              <b class="mt-2 block">AIFC, Kazakhstan</b>
+            </div>
+          </div>
+
+          <div class="text-white/60 mt-6">
+            <p class="text-sm font-800">
+              Документы
+            </p>
+            <ul class="text-white/60 ml-5 mt-3 list-disc">
+              <li>Certificate of Incorporation (AIFC)</li>
+              <li>White Paper</li>
+              <li>Investor Presentation</li>
+            </ul>
+
+            <p class="text-xs text-white/50 mt-4">
+              Важно: токен не предоставляет долей в компании без отдельной юридической оговорки. Перед публикацией условий продажи рекомендуем проверить требования AIFC/AFSA.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Roadmap -->
     <section id="roadmap" class="px-5 py-20 relative scroll-mt-28 md:py-28">
       <div class="mx-auto max-w-1180px">
@@ -293,25 +389,45 @@ const navItems = [
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="px-5 pb-10 pt-20 relative scroll-mt-28 md:pb-16 md:pt-28">
-      <div class="text-#06142f mx-auto p-7 rounded-4xl bg-cyan-300 max-w-1180px overflow-hidden md:p-10">
-        <div class="gap-6 grid md:grid-cols-[1fr_auto] md:items-center">
-          <div>
-            <h2 class="text-3xl leading-tight font-950 md:text-4xl">
-              Ride smarter through Telegram
-            </h2>
+    <section id="contact" class="px-5 pb-12 pt-20 relative scroll-mt-28 md:pb-16 md:pt-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="p-6 border border-white/10 rounded-3xl bg-white/6">
+          <h2 class="text-3xl font-900 mb-2">
+            Связаться с нами
+          </h2>
+          <p class="text-white/60 leading-7 mb-6">
+            Быстро: email, сайт или Telegram. Для партнёрств и инвестиций пишите отдельно.
+          </p>
 
-            <p class="leading-7 font-600 mt-4">
-              Website: telegramtaxi.kz · Email: info@telegramtaxi.kz
-            </p>
+          <div class="gap-3 grid">
+            <a href="https://telegramtaxi.kz" target="_blank" rel="noreferrer" class="p-3 border border-white/10 rounded-lg bg-white/8 inline-flex gap-3 items-center hover:bg-white/12">
+              <div class="i-carbon-world text-xl text-cyan-300" />
+              <div>
+                <div class="text-sm text-white/50">Website</div>
+                <div class="font-800">telegramtaxi.kz</div>
+              </div>
+            </a>
+
+            <a href="mailto:info@telegramtaxi.kz" class="p-3 border border-white/10 rounded-lg bg-white/8 inline-flex gap-3 items-center hover:bg-white/12">
+              <div class="i-carbon-email text-xl text-cyan-300" />
+              <div>
+                <div class="text-sm text-white/50">Email</div>
+                <div class="font-800">info@telegramtaxi.kz</div>
+              </div>
+            </a>
+
+            <a :href="telegramLink" target="_blank" rel="noreferrer" class="p-3 border border-white/10 rounded-lg bg-white/8 inline-flex gap-3 items-center hover:bg-white/12">
+              <div class="i-carbon-logo-telegram text-xl text-cyan-300" />
+              <div>
+                <div class="text-sm text-white/50">Telegram</div>
+                <div class="font-800">@telegramtaxi</div>
+              </div>
+            </a>
           </div>
 
-          <a
-            href="mailto:info@telegramtaxi.kz"
-            class="text-white font-900 px-7 py-4 rounded-full bg-#06142f inline-flex transition justify-center hover:bg-#0a2148"
-          >
-            Написать
-          </a>
+          <p class="text-xs text-white/50 mt-6">
+            Документы и запросы для инвесторов: укажите в теме письма «Инвестиции».
+          </p>
         </div>
       </div>
     </section>
